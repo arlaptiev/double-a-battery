@@ -37,28 +37,29 @@ Here's a table with the sensors used and corresponding chosen accuracy level:
 
 We ran a total of 6 trials. Here's a table with the average estimated distances for each trial, error, and number of samples:
 
+
 \begin{table}[h!]
     \centering
-    \begin{tabular}{|c|c|c|c|}
+    \begin{tabular}{|c|c|c|c|c|}
         \hline
-        \textbf{Sensor} & \textbf{Average Distance, m} & \textbf{Error, m} & \textbf{NSamples} \\ \hline
-        Cellular (wifi is off) & 266.54 & 225.96 & 9 \\ \hline
-        Cellular (wifi is off) & 645.07 & 152.57 & 15 \\ \hline
-        Cellular (wifi is on) & 671.73 & 179.23 & 110 \\ \hline
-        Wifi (cell is off) & 964.39 & 471.89 & 64 \\ \hline
-        Wifi (cell is off) & 553.21 & 60.71 & 59 \\ \hline
-        GPS & 559.54 & 67.04 & 276 \\ \hline
+        \textbf{Trial \#} & \textbf{Sensor} & \textbf{Average Distance, m} & \textbf{Error, m} & \textbf{NSamples} \\ \hline
+        1 & Cellular (wifi is off) & 266.54 & 225.96 & 9 \\ \hline
+        2 & Cellular (wifi is off) & 645.07 & 152.57 & 15 \\ \hline
+        3 & Cellular (wifi is on) & 671.73 & 179.23 & 110 \\ \hline
+        4 & Wifi (cell is off) & 964.39 & 471.89 & 64 \\ \hline
+        5 & Wifi (cell is off) & 553.21 & 60.71 & 59 \\ \hline
+        6 & GPS & 559.54 & 67.04 & 276 \\ \hline
     \end{tabular}
     \caption{Estimated Distances for each of 6 trials}
     \label{tab:distances}
 \end{table}
 
-Judging by the number of samples in Cellular trial w/ WiFi on, we can conclude that the sensor fusion is indeed happening. So we discard this trial when computing averages.
+Judging by the number of samples in Cellular trial w/ WiFi on, we can conclude that the sensor fusion is indeed happening. So we discard this trial.
 
 One of the WiFi trials has a very high error. We keep it only for the lack of abundant data.
 
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.65\textwidth]{images/distances.png} 
 \caption{Estimated Distances for each of 6 trials}
@@ -69,13 +70,13 @@ One of the WiFi trials has a very high error. We keep it only for the lack of ab
   \centering
   \begin{tabular}{|c|c|c|c|}
       \hline
-      \textbf{Sensor} & \textbf{Average Distance} & \textbf{Error} & \textbf{NSamples} \\ \hline
-      Cellular & 455.80 & 189.26 & 12.0 \\ \hline
-      Wifi & 758.80 & 266.30 & 61.5 \\ \hline
-      GPS & 559.54 & 67.04 & 276.0 \\ \hline
+      \textbf{Sensor} & \textbf{Average Distance, m} & \textbf{Error, m} & \textbf{NSamples} \\ \hline
+        Cellular & 645.07 & 152.57 & 15 \\ \hline
+        Wifi & 553.21 & 60.71 & 59 \\ \hline
+        GPS & 559.54 & 67.04 & 276.0 \\ \hline
   \end{tabular}
-  \caption{Average Distances}
-  \label{tab:averages}
+  \caption{Best Distances}
+  \label{tab:best}
 \end{table}
 
 
@@ -83,64 +84,55 @@ One of the WiFi trials has a very high error. We keep it only for the lack of ab
 
 The figures 2, 3, and 4 are the maps of the most accurate trials for Cellular, Wifi, and GPS respectively.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
 \begin{center}
 \includegraphics[width=0.65\textwidth]{images/cellular2.png}
-\caption{Cellular}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]
-\begin{center}
 \includegraphics[width=0.65\textwidth]{images/wifi2.png}
-\caption{Wifi}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]
-\begin{center}
 \includegraphics[width=0.65\textwidth]{images/gps.png}
-\caption{GPS}
+\caption{Best Trial Maps: Cellular, Wifi, GPS top to bottom}
 \end{center}
 \end{figure}
 
-% \section{Plots of the Battery Drain}
+\newpage
 
-% We ran the app for 4 hours with Cellular and GPS locators to observe battery drains and we got the following results: 
-% \subsection{GPS}
-% \label{subsec:GPS}
-% During the test, the GPS locator was active for the full 4-hour duration. 
-% \begin{itemize}
-%     \item \textbf{Initial Battery Level:} 95\%
-%     \item \textbf{Battery Level after 4 hours:} 90\%
-%     \item \textbf{Total Drain:} 5\%
-% \end{itemize}
+\section{Plots of the Battery Drain}
 
-% \begin{figure}[ht]
-%     \centering
-%     \includegraphics[width=0.7\textwidth]{battery_over_time_gps.png}
-%     \caption{Battery drain comparison over 4 hours for GPS and Cellular locators.}
-%     \label{fig:battery_drain_gps}
-% \end{figure}
+We ran the app for 4 hours with Cellular and GPS locators to observe battery drains and we got the following results: 
+\subsection{GPS}
+\label{subsec:GPS}
+During the test, the GPS locator was active for the full 4-hour duration. 
+\begin{itemize}
+    \item \textbf{Initial Battery Level:} 95\%
+    \item \textbf{Battery Level after 4 hours:} 90\%
+    \item \textbf{Total Drain:} 5\%
+\end{itemize}
 
-
-% \subsection{Cellular}
-% \label{subsec:Cellular}
-% Similarly, for the Cellular locator, the app was tested for 4 hours with cellular. 
-% \begin{itemize}
-%     \item \textbf{Initial Battery Level:} \%
-%     \item \textbf{Battery Level after 4 hours:} \%
-%     \item \textbf{Total Drain:} \%
-% \end{itemize}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/battery_over_time_gps.png}
+    \caption{Battery drain comparison over 4 hours for GPS and Cellular locators.}
+    \label{fig:battery_drain_gps}
+\end{figure}
 
 
-% \begin{figure}[ht]
-%     \centering
-%     \includegraphics[width=0.7\textwidth]{battery_over_time_cellular.png}
-%     \caption{Battery drain comparison over 4 hours for GPS and Cellular locators.}
-%     \label{fig:battery_drain_xellular}
-% \end{figure}
+\subsection{Cellular}
+\label{subsec:Cellular}
+Similarly, for the Cellular locator, the app was tested for 4 hours with cellular. 
+\begin{itemize}
+    \item \textbf{Initial Battery Level:} 75\%
+    \item \textbf{Battery Level after 4 hours:} 60\%
+    \item \textbf{Total Drain:} 15\%
+\end{itemize}
 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/battery_over_time_cellular.png}
+    \caption{Battery drain comparison over 4 hours for GPS and Cellular locators.}
+    \label{fig:battery_drain_xellular}
+\end{figure}
+
+\section{Time Spent} 
 
 Time spent:
 
