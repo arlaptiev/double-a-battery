@@ -1,8 +1,8 @@
 \documentclass{lab}
 
-\title{Lab \# Report: Title} % Title
+\title{Lab \# 1. Location Tech} % Title
 
-\author{Team \# \\\\ Adan Hi \\ Artem Laptiev \\\\ Class} % Team # + Names, Class (RSS)
+\author{Adan Abunaaj | adan@mit.edu \\ Artem Laptiev | laptiev@mit.edu \\\\ 6.1820} % Team # + Names, Class (RSS)
 
 \date{\today} % Date for the report
 
@@ -12,9 +12,34 @@
 
 \newpage
 
-\section{Intro}
+\section{Accuracy Levels}
 
-Hello
+Unfortunately, iOS Location Manager doesn't provide a way to specify exact sensor to use for location updates. Instead, the user can only specify the desired accuracy level. The table below shows the accuracy levels and their corresponding sensor.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Accuracy Level & Sensor & Accuracy \\ \hline
+        Best & GPS & 5-10m \\ \hline
+        Best For Navigation & GPS & 5-10m \\ \hline
+        Nearest Ten Meters & GPS & 5-10m \\ \hline
+        Nearest Hundred Meters & GPS & 50-100m \\ \hline
+        Nearest Kilometers & Cell Tower & 1km \\ \hline
+        Three Kilometers & Cell Tower & 3km \\ \hline
+    \end{tabular}
+    \caption{Accuracy levels and their corresponding sensors}
+    \label{tab:accuracy}
+\end{table}
+
+\section{Estimated Distances}
+
+\section{Maps of the Points/Trajectories}
+
+\section{Plots of the Battery Drain}
+
+\section{Time spent}
+
 
 \end{document}
 
