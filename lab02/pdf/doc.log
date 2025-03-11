@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  11 MAR 2025 15:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  11 MAR 2025 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -447,36 +447,47 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <images/AdvertisingAndDiscovery.png, id=8, 689.57625pt x 96.36pt>
 File: images/AdvertisingAndDiscovery.png Graphic file (type png)
 <use images/AdvertisingAndDiscovery.png>
-Package pdftex.def Info: images/AdvertisingAndDiscovery.png  used on input line 20.
+Package pdftex.def Info: images/AdvertisingAndDiscovery.png  used on input line 26.
 (pdftex.def)             Requested size: 305.33788pt x 42.66759pt.
 <images/CBPeripheralData.png, id=9, 345.29pt x 609.27625pt>
 File: images/CBPeripheralData.png Graphic file (type png)
 <use images/CBPeripheralData.png>
-Package pdftex.def Info: images/CBPeripheralData.png  used on input line 29.
+Package pdftex.def Info: images/CBPeripheralData.png  used on input line 35.
 (pdftex.def)             Requested size: 87.03355pt x 153.57375pt.
-<images/anthill.png, id=10, 1183.42125pt x 2565.585pt>
-File: images/anthill.png Graphic file (type png)
-<use images/anthill.png>
-Package pdftex.def Info: images/anthill.png  used on input line 36.
-(pdftex.def)             Requested size: 99.17195pt x 215.00699pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./images/AdvertisingAndDiscovery.png (PNG copy)> <./images/CBPeripheralData.png>] [3 <./images/anthill.png>] (./doc.aux) ) 
+<images/TreeOfServicesAndCharacteristics.png, id=10, 554.07pt x 508.90125pt>
+File: images/TreeOfServicesAndCharacteristics.png Graphic file (type png)
+<use images/TreeOfServicesAndCharacteristics.png>
+Package pdftex.def Info: images/TreeOfServicesAndCharacteristics.png  used on input line 42.
+(pdftex.def)             Requested size: 167.20299pt x 153.57375pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/anthill.png, id=11, 1183.42125pt x 2565.585pt>
+File: images/anthill.png Graphic file (type png)
+<use images/anthill.png>
+Package pdftex.def Info: images/anthill.png  used on input line 49.
+(pdftex.def)             Requested size: 99.17195pt x 215.00699pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./images/AdvertisingAndDiscovery.png (PNG copy)>] [3 <./images/CBPeripheralData.png> <./images/TreeOfServicesAndCharacteristics.png (PNG copy)>] [4 <./images/anthill.png>] (./doc.aux) ) 
 Here is how much of TeX's memory you used:
- 10430 strings out of 478268
- 211141 string characters out of 5846347
- 481194 words of memory out of 5000000
- 28525 multiletter control sequences out of 15000+600000
+ 10437 strings out of 478268
+ 211466 string characters out of 5846347
+ 484194 words of memory out of 5000000
+ 28531 multiletter control sequences out of 15000+600000
  473716 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,6n,107p,383b,515s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,6n,107p,459b,515s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on doc.pdf (3 pages, 278077 bytes).
+Output written on doc.pdf (4 pages, 299595 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 42 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
