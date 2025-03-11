@@ -565,6 +565,16 @@ OUTPUT doc.pdf
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./images/AdvertisingAndDiscovery.png
+INPUT ./images/AdvertisingAndDiscovery.png
+INPUT images/AdvertisingAndDiscovery.png
+INPUT ./images/AdvertisingAndDiscovery.png
+INPUT ./images/AdvertisingAndDiscovery.png
+INPUT ./images/CBPeripheralData.png
+INPUT ./images/CBPeripheralData.png
+INPUT images/CBPeripheralData.png
+INPUT ./images/CBPeripheralData.png
+INPUT ./images/CBPeripheralData.png
 INPUT ./images/anthill.png
 INPUT ./images/anthill.png
 INPUT images/anthill.png
