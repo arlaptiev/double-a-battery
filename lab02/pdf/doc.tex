@@ -1,6 +1,6 @@
 \documentclass{lab}
 
-\title{Lab \# 1. Location Tech} % Title
+\title{Lab \# 2. BLE} % Title
 
 \author{Adan Abu Naaj | adann@mit.edu \\ Artem Laptiev | laptiev@mit.edu \\\\ 6.1820} % Team # + Names, Class (RSS)
 
@@ -12,125 +12,9 @@
 
 \newpage
 
-\section{Accuracy Levels}
+\section{BLE Discovery}
 
-Unfortunately, iOS Location Manager doesn't provide a way to specify exact sensor to use for location updates. Instead, the user can only specify the desired accuracy level as means to limit unnecessary battery drain. For each accuracy level, the exact usage of sensors is unclear. However, GPS usually corresponds to the best accuracy level, while cell tower triangulation is used for the worst accuracy level.
-
-We also try to prevent sensor fusion by turning an/off WiFi and Cellular Data (though we don't have enough data to prove the latter is effective) for corresponding experiments.
-
-Here's a table with the sensors used and corresponding chosen accuracy level:
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|c|c|}
-        \hline
-        \textbf{Sensor} & \textbf{Accuracy Level} \\ \hline
-        GPS & kCCLLocationAccuracyBestForNavigation \\ \hline
-        Wifi & kCCLLocationAccuracyHundredMeters \\ \hline
-        Cell & kCLLocationAccuracyThreeKilometers \\ \hline
-    \end{tabular}
-    \caption{Sensors and Accuracy Levels}
-    \label{tab:accuracy}
-\end{table}
-
-\section{Average Estimated Distances}
-
-We ran a total of 6 trials. Here's a table with the average estimated distances for each trial, error, and number of samples:
-
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|c|c|c|c|c|}
-        \hline
-        \textbf{Trial \#} & \textbf{Sensor} & \textbf{Average Distance, m} & \textbf{Error, m} & \textbf{NSamples} \\ \hline
-        1 & Cellular (wifi is off) & 266.54 & 225.96 & 9 \\ \hline
-        2 & Cellular (wifi is off) & 645.07 & 152.57 & 15 \\ \hline
-        3 & Cellular (wifi is on) & 671.73 & 179.23 & 110 \\ \hline
-        4 & Wifi (cell is off) & 964.39 & 471.89 & 64 \\ \hline
-        5 & Wifi (cell is off) & 553.21 & 60.71 & 59 \\ \hline
-        6 & GPS & 559.54 & 67.04 & 276 \\ \hline
-    \end{tabular}
-    \caption{Estimated Distances for each of 6 trials}
-    \label{tab:distances}
-\end{table}
-
-Judging by the number of samples in Cellular trial w/ WiFi on, we can conclude that the sensor fusion is indeed happening. So we discard this trial.
-
-One of the WiFi trials has a very high error. We keep it only for the lack of abundant data.
-
-
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.65\textwidth]{images/distances.png} 
-\caption{Estimated Distances for each of 6 trials}
-\end{center}  
-\end{figure}
-
-\begin{table}[h!]
-  \centering
-  \begin{tabular}{|c|c|c|c|}
-      \hline
-      \textbf{Sensor} & \textbf{Average Distance, m} & \textbf{Error, m} & \textbf{NSamples} \\ \hline
-        Cellular & 645.07 & 152.57 & 15 \\ \hline
-        Wifi & 553.21 & 60.71 & 59 \\ \hline
-        GPS & 559.54 & 67.04 & 276.0 \\ \hline
-  \end{tabular}
-  \caption{Best Distances}
-  \label{tab:best}
-\end{table}
-
-
-\section{Maps of the Points/Trajectories}
-
-The figures 2, 3, and 4 are the maps of the most accurate trials for Cellular, Wifi, and GPS respectively.
-
-\begin{figure}[!htbp]
-\begin{center}
-\includegraphics[width=0.65\textwidth]{images/cellular2.png}
-\includegraphics[width=0.65\textwidth]{images/wifi2.png}
-\includegraphics[width=0.65\textwidth]{images/gps.png}
-\caption{Best Trial Maps: Cellular, Wifi, GPS top to bottom}
-\end{center}
-\end{figure}
-
-\newpage
-
-\section{Plots of the Battery Drain}
-
-We ran the app for 4 hours with Cellular and GPS locators to observe battery drains and we got the following results: 
-\subsection{GPS}
-\label{subsec:GPS}
-During the test, the GPS locator was active for the full 4-hour duration. 
-\begin{itemize}
-    \item \textbf{Initial Battery Level:} 95\%
-    \item \textbf{Battery Level after 4 hours:} 90\%
-    \item \textbf{Total Drain:} 5\%
-\end{itemize}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.7\textwidth]{images/battery_over_time_gps.png}
-    \caption{Battery drain comparison over 4 hours for GPS and Cellular locators.}
-    \label{fig:battery_drain_gps}
-\end{figure}
-
-
-\subsection{Cellular}
-\label{subsec:Cellular}
-Similarly, for the Cellular locator, the app was tested for 4 hours with cellular. 
-\begin{itemize}
-    \item \textbf{Initial Battery Level:} 75\%
-    \item \textbf{Battery Level after 4 hours:} 60\%
-    \item \textbf{Total Drain:} 15\%
-\end{itemize}
-
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.7\textwidth]{images/battery_over_time_cellular.png}
-    \caption{Battery drain comparison over 4 hours for GPS and Cellular locators.}
-    \label{fig:battery_drain_xellular}
-\end{figure}
+\section{A peripheral, a service, a characteristic}
 
 \section{Time Spent} 
 
