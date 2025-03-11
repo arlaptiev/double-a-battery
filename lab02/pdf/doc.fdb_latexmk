@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1741719645 "/Users/artemolaptiev/Documents/projects/6.1820/double-a-battery/lab02/pdf/doc.tex" "doc.pdf" "doc" 1741719647
-  "/Users/artemolaptiev/Documents/projects/6.1820/double-a-battery/lab02/pdf/doc.tex" 1741719645 1082 955c3c42a6a282ba86ef243608455db1 ""
+["pdflatex"] 1741721163 "/Users/artemolaptiev/Documents/projects/6.1820/double-a-battery/lab02/pdf/doc.tex" "doc.pdf" "doc" 1741721164
+  "/Users/artemolaptiev/Documents/projects/6.1820/double-a-battery/lab02/pdf/doc.tex" 1741721161 2644 8d78667a9d3c2fa96cdd6f370c46eaea ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -78,10 +78,11 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663046783 2826438 59bd5108b8d9b6645439ba74b7d497a1 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "clrscode4e.sty" 1741663516 17029 9432e4a78a6f600e9dcfe3a0af3445d2 ""
-  "doc.aux" 1741719646 835 95139688f1aa1ed9b42df9aa0a2d104e "pdflatex"
-  "doc.tex" 1741719645 1082 955c3c42a6a282ba86ef243608455db1 ""
+  "doc.aux" 1741721164 999 3b9eb721dea18b79a11b5b2397c94e62 "pdflatex"
+  "doc.tex" 1741721161 2644 8d78667a9d3c2fa96cdd6f370c46eaea ""
   "images/AdvertisingAndDiscovery.png" 1741719428 9390 f76295bec0c098592ae6953c9fb23c92 ""
   "images/CBPeripheralData.png" 1741719461 40619 39c480d2c321cdb54fa1e56995d27c93 ""
+  "images/TreeOfServicesAndCharacteristics.png" 1741721125 16169 6d6b7386029dd801b4878f880cb81ee4 ""
   "images/anthill.png" 1741718924 247347 5e91de7703fb992adbc7602fc25e8c84 ""
   "lab.cls" 1741663516 255 a52c2ad1a86f144f1bb1eeb8e7a290bd ""
   "lab.sty" 1741663516 9695 37af6dabc51fc751732519ea684aadeb ""
